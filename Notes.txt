@@ -1,0 +1,54 @@
+SOLID Principles:
+    - S -> Single-responsibility Principle: One task only. It is the foundation of programming. Concept of splitting functionality into blocks. One block of code shouldn't be trying to do many different things. Each module encapsulates all logic for the specific feature set.
+    - O -> Open-closed Principle: Objects, entities etc should be open for extension, but not modification.
+    - L -> Liskov Substitution Principle: A class should be substitutiable from its parent class. 
+    I -> Interface Segregation Principle: Client should never be forced to iplement functionality that it doesn't need.
+    D -> Dependency Inversion Principle: Entities must depend on abstractions, not implementations.
+
+DRY Principle -> Don't Repeat Yourself:
+    - Less code repetition.
+    - One implementation point for code in our app.
+    - Easier to maintain.
+    - Single Responsibility Principle relies on DRY.
+    - Open-closed principle only works when DRY is followed.
+    - Write code that doesn't have to be changed every time the requirements change.
+
+Dependency Inversion:
+    - D in SOLID.
+    - Promotes Loose-Coupling in applications.
+    - Dependencies should point to abstractions.
+    - Allows for easier maintainance and modifications to function logic.
+    - Allows for easier code sharing between dependent classes.
+
+What is Clean Architecture?:
+    All-In-One Architecture
+    Pros:
+        * Easier to deliver.
+        * Can be stable and a long term solution
+    Cons:
+        * Hard to enforce SOLID Principles
+        * Harder to maintain as project grows
+        * Harder to test
+
+    Layered Architecture
+    Pros:
+        - Better enforcing od SOLID principles 
+        - Easier to maintain larger code 
+    Cons: 
+        - Layers are dependent 
+        - Still acts as one application 
+        - Logic is sometimes scattered across layers 
+    
+    Onion Architecture
+    Pros: 
+        - Better testibality as unit tests can be created for seperate layers 
+        - Easier to make changes in code base without directly affecting other modules
+        - Promotes loose coupling 
+    Cons: 
+        - Learning curve
+        - Time consuming 
+
+    Not every app needs clean arch. Do you really need it? What is the scale of the application?
+    Start small and extend as needed.
+
+Development Environment
